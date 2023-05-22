@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /*preserva as dimensões da box*/
 }
 
 :root {
@@ -60,4 +61,51 @@ a:hover {
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    margin: 1rem;
+    font-size: 2.0rem;
+    border-collapse: collapse;
+}
+
+table tr:first-child {
+    background-color: steelblue;
+    color: white;
+}
+
+table tr:nth-child(2n + 3) {
+    background-color: lightgrey;
+}
+
+ul, ol {
+    padding-left: 3.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: decimal-leading-zero;
+}
+
+.box {
+   height: 10rem;
+   width: 20rem;
+   padding: 1.5rem;
+   background-color: blue;
+   border: 0.4rem solid red; 
+   color: white;
+   display: inline-block;
+   border-radius: 1rem;
+}
+
+img {
+    height: 14rem;
+    object-fit: cover;
 }
