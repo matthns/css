@@ -18,7 +18,84 @@ h1 {
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
+    /* opacity: 1; */
 
+}
+
+/* [data-anchor="products"] {
+    width: 80%;
+    background-color: steelblue;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.6rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: auto;
+    text-decoration: none;
+    display: block;
+    /* transform: scale(.5) rotate(30deg); */
+    /* transition: .2s ease-in-out; */
+/* }  */
+
+[data-anchor="products"]:hover {
+    background-color: aqua;
+    color: black;
+    transform: scale(1.2);
+}
+
+
+[data-anchor="team"] { 
+    margin-top: 2rem;
+    animation: pulse 2s infinite;
+    transform: scale(1);
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.35);
+        opacity: .6;
+    }
+
+    /* 100% {
+        transform: scale(1.35);
+        opacity: .1;
+    } */
+}
+
+.spinner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-spinner {
+    margin-top: 3rem;
+    margin: 4rem;
+    font-size: 5rem;
+    color: blueviolet;
+    animation: load 1s infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+hr {
+    margin: 1rem;
 }
 
 h2 {
@@ -40,9 +117,22 @@ p, span {
 
 
 a {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem;
     margin: 1.5rem;
-    color: red;
+    color: red; */
+    width: 80%;
+    background-color: steelblue;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.6rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: auto;
+    text-decoration: none;
+    display: block;
+    /* transform: scale(.5) rotate(30deg); */
+    transition: .2s ease-in-out;
 }
 
 a:visited {
@@ -72,6 +162,7 @@ table {
     margin: 1rem;
     font-size: 2.0rem;
     border-collapse: collapse;
+    /* visibility: hidden; */
 }
 
 table tr:first-child {
