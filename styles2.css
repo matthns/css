@@ -12,10 +12,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main {
-    padding-top: 7rem;
-}
-
 h1 {
     color: blueviolet;
     font-size: 5.6rem;
@@ -58,10 +54,10 @@ a:hover {
 }
 
 .bgimg {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-color: aqua;
-    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80');
+    background-image: url('https://cdn.shopify.com/s/files/1/0306/6419/6141/articles/coding_languages.png?v=1619126283');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -133,5 +129,42 @@ ol {
 
 .box + span {
     clear: both;
+}
+
+[data-company] {
+    background-color: aqua;
+}
+
+
+/* media queries */
+@media screen and (max-width: 767x){
+    /* table {
+        display: none;
+    }
+
+    h1 {
+        color: red;
+    } */
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .bg {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bg {
+        height: 50vh;
+    }
+}
+
+
+
+@media print { 
+    .bgimg {
+        display: none;
+    }
 }
  
