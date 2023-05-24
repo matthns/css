@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main-color: #44bb93;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+}
+
+h1, p {
+    margin: 1rem;
+    text-align: center;
+}
+
+.toptech {
+    color:var(--main-color);
+    text-align: center;
+    font-style: italic;
+}
+
+.fa.fa-microchip {
+    color:var(--main-color);
+    font-size: 5rem;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+button.buttonlgn{
+    background-color: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: .2rem;
+}
+
+.loginform {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+label, input {
+    display: grid;
+    margin: 1rem;
+}
+
+label, .bottom_footer {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.bottom_footer {
+    text-align: center;
+}
+
+
+
+
